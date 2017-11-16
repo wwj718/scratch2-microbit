@@ -41,7 +41,7 @@ def serial_proc():
     if os.name == "nt":
         PORT = "COM7"
     else:
-        PORT = "/dev/ttyACM0"
+        PORT = "/dev/cu.usbmodem1412"
     #
     BAUD = 115200
     s = serial.Serial(PORT)
